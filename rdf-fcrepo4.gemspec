@@ -4,11 +4,11 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'rdf/fcrepo4/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "rdf-ldp"
+  spec.name          = "rdf-fcrepo4"
   spec.version       = RDF::FCRepo4::VERSION
   spec.authors       = ["Naomi Dushay"]
   spec.email         = ["ndushay@stanford.edu"]
-  spec.summary       = %q{Linked Data Platform vocabulary for RDF.rb}
+  spec.summary       = %q{Fedora Commons Repository Version 4 vocabulary for RDF.rb and helper methods}
   spec.homepage      = ""
   spec.license       = "Apache 2"
 
