@@ -1,6 +1,7 @@
-# rdf-ldp
+# rdf-fcrepo4
 
-[![Gem Version](https://badge.fury.io/rb/rdf-fcrepo4.svg)](http://badge.fury.io/rb/rdf-fcrepo4)
+[![Build Status](https://travis-ci.org/sul-dlss/rdf-fcrepo4.svg)](https://travis-ci.org/sul-dlss/rdf-fcrepo4)
+[![Dependency Status](https://gemnasium.com/sul-dlss/rdf-fcrepo4.svg)](https://gemnasium.com/sul-dlss/rdf-fcrepo4) [![Gem Version](https://badge.fury.io/rb/rdf-fcrepo4.svg)](http://badge.fury.io/rb/rdf-fcrepo4)
 
 Contains vocabularies to be used by RDF ruby gem https://github.com/ruby-rdf/rdf/ to simplify coding when using Fedora RDF objects.  
 

@@ -5,7 +5,7 @@ require 'rdf/fcrepo4/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "rdf-fcrepo4"
-  spec.version       = RDF::FCRepo4::VERSION
+  spec.version       = VERSION
   spec.authors       = ["Naomi Dushay"]
   spec.email         = ["ndushay@stanford.edu"]
   spec.summary       = %q{Fedora Commons Repository Version 4 vocabulary for RDF.rb and helper methods}
@@ -21,4 +21,7 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "bundler", "~> 1.6"
   spec.add_development_dependency "rake", "~> 10.0"
+  spec.add_development_dependency "rspec", "~> 3.0"
+  spec.add_development_dependency "rdf-turtle" # used to load testing fixtures
+  
 end
