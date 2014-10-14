@@ -26,7 +26,7 @@ Or install it yourself as:
 ## Usage
 
     include rdf
-    include rdf-fcrepo4
+    include rdf/fcrepo4
     
     RDF::FCRepo4.Object    #=> RDF::URI("http://fedora.info/definitions/v4/rest-api#object")
 
