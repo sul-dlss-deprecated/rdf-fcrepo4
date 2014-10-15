@@ -24,7 +24,7 @@ describe RDF::FCRepo4 do
       expect(result.size).to eql 1
 
       stripped_graph = RDF::FCRepo4.remove_fedora_triples graph
-      expect(graph.size).to eql 39
+      expect(stripped_graph.size).to eql 15
       result = stripped_graph.query [nil, RDF.type, RDF::URI.new("http://fedora.info/definitions/v4/rest-api#resource")]
       expect(result.size).to eql 0
       result = stripped_graph.query [nil, RDF.type, RDF::URI.new("http://www.jcp.org/jcr/nt/1.0base")]
