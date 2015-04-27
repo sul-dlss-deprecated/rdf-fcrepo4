@@ -2,6 +2,8 @@
 # This file generated automatically using vocab-fetch from http://fedora.info/definitions/v4/repository#
 require 'rdf'
 module RDF
+  # @deprecated:  this class is deprecated in favor of RDF::Vocab::Fcrepo4
+  #   from rdf-vocab gem
   class FCRepo4 < RDF::StrictVocabulary("http://fedora.info/definitions/v4/repository#")
 
     # Class definitions

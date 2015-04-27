@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.version       = VERSION
   spec.authors       = ["Naomi Dushay"]
   spec.email         = ["ndushay@stanford.edu"]
-  spec.summary       = %q{Fedora Commons Repository Version 4 vocabulary for RDF.rb and helper methods}
+  spec.summary       = %q{This gem deprecated in favor of rdf-vocab; helper method is in triannon gem}
   spec.homepage      = ""
   spec.license       = "Apache 2"
 
@@ -18,10 +18,11 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_dependency 'rdf'
+  spec.add_dependency 'deprecation'
 
   spec.add_development_dependency "bundler", "~> 1.6"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec", "~> 3.0"
   spec.add_development_dependency "rdf-turtle" # used to load testing fixtures
-  
+
 end

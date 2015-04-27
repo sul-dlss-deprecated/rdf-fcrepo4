@@ -1,3 +1,7 @@
+# DEPRECATED
+
+This gem is deprecated;  rdf-vocab gem (https://github.com/ruby-rdf/rdf-vocab, included in the linkeddata gem) now contains RDF::Vocab::Fcrepo4.  You can find the  helper method to strip Fedora triples from an RDF::Graph object in the triannon gem in lib/oa_graph_helper.rb.
+
 # rdf-fcrepo4
 
 [![Build Status](https://travis-ci.org/sul-dlss/rdf-fcrepo4.svg)](https://travis-ci.org/sul-dlss/rdf-fcrepo4)
@@ -12,7 +16,7 @@ Also contains helper method to strip Fedora triples from an RDF::Graph object.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'rdf-fcrepo4'
+gem 'rdf-vocab'  # (was rdf-fcrepo4)
 ```
 
 And then execute:
@@ -21,19 +25,14 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install rdf-fcrepo4
+    $ gem install rdf-vocab # (was rdf-fcrepo4)
 
 ## Usage
 
-    include rdf
-    include rdf/fcrepo4
-    
-    RDF::FCRepo4.Object    #=> RDF::URI("http://fedora.info/definitions/v4/rest-api#object")
+    require 'rdf/vocab'
 
-## Contributing
+    RDF::Vocab::Fcrepo4.Object    #=> RDF::URI("http://fedora.info/definitions/v4/rest-api#object")
 
-1. Fork it ( https://github.com/[my-github-username]/rdf-fcrepo4/fork )
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create a new Pull Request
+# DEPRECATED
+
+This gem is deprecated;  rdf-vocab gem (https://github.com/ruby-rdf/rdf-vocab, included in the linkeddata gem) now contains RDF::Vocab::Fcrepo4.  You can find the  helper method to strip Fedora triples from an RDF::Graph object in the triannon gem in lib/oa_graph_helper.rb.
