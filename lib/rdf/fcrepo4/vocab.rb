@@ -2,9 +2,16 @@
 # This file generated automatically using vocab-fetch from http://fedora.info/definitions/v4/repository#
 require 'rdf'
 module RDF
+  # deprecate FCRepo4
+  def self.const_missing(const_name)
+    super unless const_name == :FCRepo4
+    warn "DEPRECATION WARNING: the class RDF::FCRepo4 is deprecated. Use RDF::Vocab::Fcrepo4 from https://github.com/ruby-rdf/rdf-vocab instead."
+    FCRepo4Deprecated
+  end
+
   # @deprecated:  this class is deprecated in favor of RDF::Vocab::Fcrepo4
   #   from rdf-vocab gem
-  class FCRepo4 < RDF::StrictVocabulary("http://fedora.info/definitions/v4/repository#")
+  class FCRepo4Deprecated < RDF::StrictVocabulary("http://fedora.info/definitions/v4/repository#")
 
     # Class definitions
     term :AnnotatedResource,
