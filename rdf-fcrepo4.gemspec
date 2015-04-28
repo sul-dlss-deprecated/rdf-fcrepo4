@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Naomi Dushay"]
   spec.email         = ["ndushay@stanford.edu"]
   spec.summary       = %q{This gem deprecated in favor of rdf-vocab; helper method is in triannon gem}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/sul-dlss/rdf-fcrepo4"
   spec.license       = "Apache 2"
 
   spec.files         = `git ls-files -z`.split("\x0")
